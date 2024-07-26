@@ -1,0 +1,166 @@
+/*Importing fonts from the local folder "It is done this way ⬇️"*/
+@import "Assets/Fonts";
+@font-face {
+    font-family: 'GothamLight';
+    src: url("Assets/Fonts/GothamLight.ttf") format("truetype");
+    /*format = true-type -> mean ttf -> truetypeformate , mean whatever the data is written in the font file will be taken from it. ex. if the font file is GothamBold.tff then in this file it will automatically know the font weight is something greater than >600 Hope you get the idea.*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: url("Assets/Fonts/GothamBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBoldItalic';
+    src: url("Assets/Fonts/GothamBoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url("Assets/Fonts/GothamBook.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBookItalic';
+    src: url("Assets/Fonts/GothamBookItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamLightItalic';
+    src: url("Assets/Fonts/GothamLightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: url("Assets/Fonts/GothamMedium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMedium_1';
+    src: url("Assets/Fonts/GothamMedium_1.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamMediumItalic';
+    src: url("Assets/Fonts/GothamMediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+
+
+- Line heights
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+- Primary: 2c2b2b (H1 heading)
+- Tints:
+- Shades: f1f1f1 (BBackground)
+- Accents:
+- Greys: 353a3d (don't know where is used 🤷)
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+    48 px or 4.8rem is used for the margin, so when next section is added it will be 48px away from the previous section.
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+/*For section gap used by section Heading*/
+
+.container{
+    margin: 14.4rem 0;
+    max-width: 100%;
+}
+
+.name{
+    font-family: "GothamLight", sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase ;
+    color: #2c2b2b;
+}
+
+.secondary_heading {
+    font-size: 3.8rem;
+    color: rgba(44, 43, 43, 0.92);
+    font-family: "GothamBook", sans-serif;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(44, 43, 43, 0.92);
+    /*underline*/
+    /*text-decoration: underline 1.2px rgba(44, 43, 43, 0.92) ;*/
+    & img{
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-left: 1.4rem;
+        color: rgba(44, 43, 43, 0.95);
+    }
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro{
+    margin-top: 14.4rem;
+}
+
+/* This applies to the entire body */
+body::-webkit-scrollbar {
+    width: 1em; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #2c2b2b; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #c1c1c1; /* color of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f1f1f1; /* color of the scroll thumb */
+}
+
+
+
+
